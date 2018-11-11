@@ -11,22 +11,6 @@ var app = {
         }
     },
     //
-    sayDatetime : function () {
-        var t2sDatetime = '';
-        var hourStr     = (datetime.hourStr > 12) ? (datetime.hourStr - 12) : datetime.hourStr;
-        t2sDatetime = "Today is " + datetime.dowString[datetime.dowStr] + ' ' +
-                      datetime.monthString[datetime.monthStr]  + ' ' + 
-                      datetime.dateStr + ", " + datetime.yearStr + ". The time is " +
-                      hourStr + ":" + datetime.minuteStr + ".";
-        document.getElementById('status').innerHTML = t2sDatetime;
-        //
-        if (app.isCordova) {
-            txt2SpeechPlugin.talk(t2sDatetime);
-        } else {
-            alert("not working at this time.");
-        }
-    },
-    //
     updateDateTimeDisplay : function () {
         datetime.get();
         //document.getElementById('epochTime').innerHTML = datetime.epoch;
@@ -71,8 +55,9 @@ var app = {
     onDeviceReady : function () {
         app.targetEvent = 'touchend';
         //
-        app.isCordova                                     = (typeof window.cordova !== "undefined");
-        document.getElementById('status').innerHTML       = 'is Cordova';
+        app.isCordova                               = (typeof window.cordova !== "undefined");
+        document.getElementById('status').innerHTML = 'is Cordova';
+        document.getElementById('appIcon').src      = 'img/icon.png';
         //window.screen.orientation.lock('landscape-primary');
     }
 }
