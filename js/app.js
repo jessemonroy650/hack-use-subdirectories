@@ -73,6 +73,6 @@ var app = {
         //
         app.isCordova                                     = (typeof window.cordova !== "undefined");
         document.getElementById('status').innerHTML       = 'is Cordova';
-        window.screen.orientation.lock('landscape-primary');
+        //window.screen.orientation.lock('landscape-primary');
     }
 }

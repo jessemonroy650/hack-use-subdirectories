@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Hack Use Subdirectories</title>
     <meta http-equiv="Content-Security-Policy" 
-             content="default-src * js/ img/ css/;  media-src *;
+             content="default-src * ;  media-src *;
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                       script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
     <meta name="viewport" content="width=device-width">
@@ -17,24 +17,20 @@
 <body class=height100percent>
     <div id=header>
         <img id=appIcon src=img/icon.png>
-        <b>Hack Use Subdirectories</b>
+        <b>Hack Use</b>
         <button class="button button-primary" id=exitApp>Exit</button>
     </div>
-    <div id=canvas>
-
-    <div id=epochTime></div>
-    <div id=theTime>
-        <span id=hour></span>:<span id=minute></span>:<span id=second></span>
-    </div>
-    <div id=theDOW>
-        <span id=dow></span>
-     </div>
-    <div id=theDate>
-        <span id=month></span> <span id=date></span>, <span id=year></span>
-    </div>
-
-
-
+    <div id=canvas >
+        <div id=epochTime></div>
+        <div id=theTime>
+            <span id=hour></span>:<span id=minute></span>:<span id=second></span>
+        </div>
+        <div id=theDOW>
+            <span id=dow></span>
+        </div>
+        <div id=theDate>
+            <span id=month></span> <span id=date></span>, <span id=year></span>
+        </div>
     </div>
     <div id=footer>
         <div><b>Status:</b> <span id=status>status unknown</span></div>
