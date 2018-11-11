@@ -5,7 +5,7 @@
         version     = "1.0.0"
         versionCode = "10" >
         <!-- https://build.phonegap.com/current-support -->
-        <preference name="phonegap-version" value="cli-6.0.0" />
+        <preference name="phonegap-version" value="cli-6.5.0" />
 
         <name>hack-use-subdirectories</name>
         <description>hack use subdirectories</description>
