@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class=height100percent>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Hack Use Subdirectories</title>
+    <meta http-equiv="Content-Security-Policy" 
+             content="default-src * js/ img/ css/;  media-src *;
+                      style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/datetime.js"></script>
+</head>
+<body class=height100percent>
+    <div id=header>
+        <img id=appIcon src=img/icon.png>
+        <b>Hack Use Subdirectories</b>
+        <button class="button button-primary" id=exitApp>Exit</button>
+    </div>
+    <div id=canvas>
+
+    <div id=epochTime></div>
+    <div id=theTime>
+        <span id=hour></span>:<span id=minute></span>:<span id=second></span>
+    </div>
+    <div id=theDOW>
+        <span id=dow></span>
+     </div>
+    <div id=theDate>
+        <span id=month></span> <span id=date></span>, <span id=year></span>
+    </div>
+
+
+
+    </div>
+    <div id=footer>
+        <div><b>Status:</b> <span id=status>status unknown</span></div>
+        <div><span id=appLabelFooter>Date/Time v<span id=appVersion></span></span>  <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2018</span></div>
+        
+    </div>
+</body>
+    <script type="text/javascript">
+    // The 'DOMContentLoaded' event fires before the 'deviceready'
+    document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
+    // Wait for PhoneGap to load
+    document.addEventListener('deviceready', app.onDeviceReady, false);
+    </script>
+</html>

@@ -1,0 +1,15 @@
+body {margin:0px;font-size:large;}
+.height100percent {height:100%}
+#appIcon {margin:auto;float:left; height:36px; width:36px;}
+#header {margin:0;padding:0.1em;font-family:cursive;text-align:center;line-height:2em;background-color:#d3f3f3;} /* border:1px solid black; */   
+#talkApp {margin:0.1em;float:left;font-size:0.9em;}
+#exitApp {margin:0.1em;float:right;font-size:0.9em;}
+#canvas {clear:both;height:71%;background-color:cyan;}
+#footer {padding:0.1em;background-color:#b0e0e6;}
+#appLabelFooter {font-size:small;}
+#copyright {margin:0.1em;font-style:italic;font-size:small;float:right;}
+
+#epochTime {font-size:small;text-align:center;}
+#theTime {font-size:4em;font-family:monospace;text-align:center;}
+#theDate {font-size:1.5em;font-family:cursive;text-align:center;}
+#theDOW {font-size:1.25em;text-align:center;}
